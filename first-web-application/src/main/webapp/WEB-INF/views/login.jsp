@@ -7,6 +7,6 @@ pageEncoding="UTF-8"%>
 <title>YAHOO!!!! From JSP</title>
 </head>
 <body>
-My first JSP
+My first JSP ${name }
 </body>
 </HTML>
