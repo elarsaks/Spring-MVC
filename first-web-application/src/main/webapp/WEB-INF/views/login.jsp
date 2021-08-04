@@ -13,6 +13,7 @@ pageEncoding="UTF-8"%>
 <body>
 
 <form action="/login.do"  method="post">
+<p><font color="red">${errorMessage}</font></p>
 Enter your name: <input	name="name" type="text"/>
 Enter your password: <input	name="password" type="password"/> <input type="submit" />
 </form>
