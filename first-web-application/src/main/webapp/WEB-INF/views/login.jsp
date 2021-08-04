@@ -11,6 +11,8 @@ System.out.println("Printing from JSP is called scriplet");
 System.out.println(request.getParameter("name"));
 %>
 <body>
-My first JSP ${name }
+My first JSP 
+My name is ${name }
+Password is ${password }
 </body>
 </HTML>
