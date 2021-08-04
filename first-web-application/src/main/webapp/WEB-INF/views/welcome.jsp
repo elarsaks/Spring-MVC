@@ -8,7 +8,7 @@ pageEncoding="UTF-8"%>
 </head>
 <body>
 
-<h1>Welcome!</h1>
-<h1>${name}</h1>
+<p>Welcome ${name} your password is ${password} </p>
+
 </body>
 </HTML>
