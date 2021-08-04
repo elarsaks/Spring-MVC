@@ -6,14 +6,9 @@ pageEncoding="UTF-8"%>
 <meta htttp-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>YAHOO!!!! From JSP</title>
 </head>
-<%
-System.out.println("Printing from JSP is called scriplet");
-System.out.println(request.getParameter("name"));
-%>
 <body>
 
-<form action="/login.do"  method="post">
-Enter your name: <input	name="name" type="text"/> <input type="submit" />
-</form>
+<h1>Welcome!</h1>
+<h1>${name}</h1>
 </body>
 </HTML>
