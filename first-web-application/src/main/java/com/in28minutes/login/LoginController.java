@@ -1,4 +1,4 @@
-package com.in28minutes.springmvc;
+package com.in28minutes.login;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class LoginController {
+	
+	LoginService service = new LoginService();
 	
 	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public String showLoginPage() {
@@ -20,6 +22,12 @@ public class LoginController {
 			@RequestParam String password,
 			ModelMap model
 			) {
+		
+		if(!service.validateUser(name, password)) {
+			model.put("errorMessage", "Invalid Credentials!");
+			return "login";
+		} 
+		
 		model.put("name", name);
 		model.put("password", password);
 		return "welcome";
