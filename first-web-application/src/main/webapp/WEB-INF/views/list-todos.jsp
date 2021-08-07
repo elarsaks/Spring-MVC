@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-Your Todos are
+Hi ${name} <br /> 
+Your Todos are: <br /> 
 ${todos }
 </body>
 </html>

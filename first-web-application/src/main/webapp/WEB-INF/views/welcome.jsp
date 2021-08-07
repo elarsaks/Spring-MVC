@@ -8,7 +8,8 @@ pageEncoding="UTF-8"%>
 </head>
 <body>
 
-<p>Welcome ${name} your password is ${password} </p>
+<p>Welcome ${name}</p> <br />
+Now, you can <a href="/list-todos"> manage your todos.</a>
 
 </body>
 </HTML>
